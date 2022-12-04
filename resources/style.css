@@ -1,0 +1,210 @@
+@font-face {
+	font-family: WorkSans;
+	src: url("https://content.codecademy.com/courses/learn-css-grid/project-ii/Resources/Work_Sans/WorkSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url("https://content.codecademy.com/courses/learn-css-grid/project-ii/Resources/Poppins/Poppins-Regular.ttf");
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(359deg, #3023ae, #eb7f7b);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(120, 70, 154, 0.2);
+    text-align: center;
+    justify-content: space-around;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 10px 1fr 3fr 1fr;
+}
+
+.navbar h1 {
+    font-family: Poppins;
+    color: #ffffff;
+    margin: 0;
+    grid-column: 3 / 4;
+    align-self: center;
+}
+
+.search-bar {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.35);
+    position: absolute;
+    top: 8px;
+    grid-column: 2/3;
+}
+
+.search-bar input {
+    height: 18px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 7px;
+}
+
+.search-icon {
+    float: left;
+    margin-top: 9px;
+    margin-left: 7px;
+}
+
+/* SITE BODY */
+
+.site-body {
+    position: absolute;
+    top: 100px;
+    margin-left: 50px;
+}
+
+.container {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* CARDS */
+
+.card {
+    background-color: rgba(216, 216, 216, 0.21);
+    border: 1px solid rgba(151, 151, 151, 0.21);
+    position: relative;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.card-column {
+    background-color: #ffffff;
+    min-height: 700px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 20px repeat(5, 100px);
+    grid-auto-rows: 100px;
+    align-content: space-around;
+}
+
+.card-column h2 {
+    font-family: WorkSans;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2f2f2f;
+    letter-spacing: 0.2px;
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.card-column input {
+    height: 18px;
+    margin-left: 15px;
+}
+
+.taskgroup-heading {
+    margin-top: 7px;
+    margin-left: 15px;
+}
+
+.ellipsis-icon {
+    float: right;
+    margin-right: 15px;
+}
+
+.rectangle {
+    width: 57px;
+    height: 6px;
+    display: inline-block;
+    position: relative;
+    margin-left: 7px;
+}
+
+.yellow {
+    background-color: #fdcb1e;
+}
+
+.green {
+    background-color: #50e3c2;
+}
+
+.blue {
+    background-color: #3343e5;
+}
+
+.orange {
+    background-color: #ff7700;
+}
+
+.task-description {
+    font-family: WorkSans;
+    font-size: 14px;
+    color: #2f2f2f;
+    letter-spacing: 0.2px;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 7px;
+}
+
+.list-icon {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin-left: 7px;
+    margin-bottom: 5px;
+}
+
+.task-date {
+    font-family: WorkSans;
+    font-size: 10px;
+    color: #9b9b9b;
+    letter-spacing: 0.1px;
+    text-align: left;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    margin-bottom: 5px;
+}
+
+/* FUTURE PROJECTS */
+
+/* ACTIVE PROJECTS */
+
+/* COMPLETED PROJECTS */
+
+.completed-projects {
+    grid-template-rows: 20px;
+    grid-auto-rows: 100px;
+}
+
+/* ADD CARD CONTAINER */
+
+.add-card-container {
+    color: #2f2f2f;
+    background-color: rgba(216, 216, 216, 0.21);
+    border: 1px solid rgba(151, 151, 151, 0.21);
+}
+
+input {
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    display: inline-block;
+}
+
